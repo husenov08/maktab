@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>31_maktab web sayti</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .fade-up {
+      animation: fadeUp 1s ease forwards;
+    }
+  </style>
+</head>
+<body class="bg-gray-950 text-white font-sans">
+
+  <!-- Navbar -->
+  <nav class="flex justify-between items-center px-6 py-4 bg-gray-900 shadow-lg sticky top-0 z-50">
+    <h1 class="text-2xl font-bold"><i class="fas fa-dragon text-yellow-400 mr-2"></i>31-MAKTAB</h1>
+    <ul class="flex gap-6">
+      <li><a href="HOME.html" class="hover:text-yellow-400"><i class="fas fa-home mr-1"></i>Home</a></li>
+      <li><a href="https://login.emaktab.uz/" class="hover:text-yellow-400"><i class="fas fa-fire mr-1"></i>E_MAKTAB</a></li>
+      <li><a href="https://kitob.uz/" class="hover:text-yellow-400"><i class="fas fa-book-open mr-1"></i>KUTUBXONA</a></li>
+      <li><a href="#" class="hover:text-yellow-400"><i class="fas fa-envelope mr-1"></i>GR_5B</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="text-center py-20 px-4 md:px-10">
+    <h1 class="text-5xl md:text-6xl font-extrabold fade-up">ASALOMU <span class="text-yellow-400">ALAYKUM</span></h1>
+    <p class="text-gray-400 mt-4 fade-up" style="animation-delay: 0.3s">BU MAKTAB SAYTI SIZGA YOQADI MALUMOTLAR HAM SHU YERDA</p>
+    <div class="mt-6 flex justify-center gap-4">
+      <button class="bg-yellow-400 text-black px-6 py-2 rounded-full font-medium hover:bg-yellow-500 transition"><i class="fas fa-book-reader mr-2"></i>MAKTAB HAQIDA</button>
+      <button class="border border-yellow-400 text-yellow-400 px-6 py-2 rounded-full hover:bg-yellow-400 hover:text-black transition"><i class="fas fa-users mr-2"></i>DIREKTOR HAQIDA</button>
+    </div>
+  </section>
+
+  <!-- Cards Section -->
+  <section class="grid grid-cols-1 md:grid-cols-3 gap-8 px-6 mb-20">
+    <!-- Card 1 -->
+    <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:scale-105 transition">
+      <img src=".//—Pngtree—school logo_6851480.png" class="w-full h-60 object-cover" />
+      <div class="p-4">
+        <h3 class="text-2xl font-semibold"><i class="fas fa-book-open mr-1"></i>KUTUBXONA</h3>
+        <p class="text-gray-300 mt-2 text-sm">BU YER KUTUBXONA TEKIN KITOB O'QISHINGIZ MuMKUN.</p>
+        <button class="mt-4 bg-yellow-400 text-black px-4 py-1 rounded hover:bg-yellow-500 transition"><i class="fas fa-book-reader mr-1"></i><a href="kutubxona.html">BATAFSIL</a></button>
+      </div>
+    </div>
+    <!-- Card 2 -->
+    <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:scale-105 transition">
+      <img src=".//—Pngtree—school logo_6851480.png" class="w-full h-60 object-cover" />
+      <div class="p-4">
+        <h3 class="text-2xl font-semibold"><i class="fas fa-bolt text-yellow-400 mr-2"></i>SINFLAR</h3>
+        <p class="text-gray-300 mt-2 text-sm">BU YER SIZLAR BOLALARNI SONINI VA SINIFLARNI </p>
+        <button class="mt-4 bg-yellow-400 text-black px-4 py-1 rounded hover:bg-yellow-500 transition"><i class="fas fa-book-reader mr-1"></i>BATAFSIL</button>
+      </div>
+    </div>
+    <!-- Card 3 -->
+    <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:scale-105 transition">
+      <img src=".//—Pngtree—school logo_6851480.png" class="w-full h-60 object-cover" />
+      <div class="p-4">
+        <h3 class="text-2xl font-semibold"><i class="fas fa-skull-crossbones text-yellow-400 mr-2"></i>MAKTAB FOTO</h3>
+        <p class="text-gray-300 mt-2 text-sm">BU YERDA MAKTAB RASMLARI BOR</p>
+        <button class="mt-4 bg-yellow-400 text-black px-4 py-1 rounded hover:bg-yellow-500 transition"><i class="fas fa-book-reader mr-1"></i><a href="sinflar.html">BATAFSIL</a></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-center text-sm text-gray-400 py-6">
+    <p><i class="fas fa-copyright"></i> 2025 MangaVerse. All rights reserved.</p>
+    <div class="mt-2 flex justify-center gap-4">
+      <a href="#" class="hover:text-yellow-400"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" class="hover:text-yellow-400"><i class="fab fa-twitter"></i></a>
+      <a href="#" class="hover:text-yellow-400"><i class="fab fa-discord"></i></a>
+    </div>
+  </footer>
+
+</body>
+</html>

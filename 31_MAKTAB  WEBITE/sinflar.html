@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zamonaviy Rasm Galereya</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+<style>
+    /* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0f172a;
+  color: white;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: #1e293b;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.navbar h1 {
+  font-size: 1.5rem;
+  color: #facc15;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+}
+.nav-links li a:hover {
+  color: #facc15;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 4rem 1rem;
+  background: linear-gradient(120deg, #1e3a8a, #2563eb);
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  animation: fadeUp 1s ease-out;
+}
+
+.hero p {
+  color: #e0e7ff;
+  margin-bottom: 2rem;
+  animation: fadeUp 1s ease-out;
+}
+
+.btn {
+  background-color: #facc15;
+  color: #000;
+  padding: 0.75rem 1.5rem;
+  border-radius: 999px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.btn:hover {
+  background-color: #eab308;
+}
+
+/* Gallery */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.gallery-item {
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem 0;
+  background-color: #1e293b;
+  color: #94a3b8;
+}
+
+/* Animatsiya */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+</style>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <h1><i class="fas fa-camera-retro"></i> Image Gallery</h1>
+    <ul class="nav-links">
+      <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="#"><i class="fas fa-images"></i> Gallery</a></li>
+      <li><a href="#"><i class="fas fa-envelope"></i> Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>BU MAKTABIMIZNI RASMLARI</h2>
+    <p>HAMMA RASM LAR</p>
+    <button class="btn"><i class="fas fa-eye"></i>KORISH</button>
+  </section>
+
+  <!-- Gallery -->
+  <section class="gallery">
+    <div class="gallery-item"><img src="photo_2025-04-23_10-17-03.jpg" alt="img1"></div>
+    <div class="gallery-item"><img src="photo_2025-04-23_10-17-06.jpg" alt="img2"></div>
+    <div class="gallery-item"><img src="photo_2025-04-23_10-17-14.jpg" alt="img3"></div>
+    <div class="gallery-item"><img src="photo_2025-04-23_10-17-16.jpg" alt="img4"></div>
+    <div class="gallery-item"><img src="photo_2025-04-23_10-17-19.jpg" alt="img5"></div>
+    <div class="gallery-item"><img src="photo_2025-04-23_10-17-22.jpg" alt="img6"></div>
+    <div class="gallery-item"><img src="photo_2025-04-23_10-17-35.jpg" alt="img3"></div>
+    <div class="gallery-item"><img src="photo_2025-04-23_10-17-44.jpg" alt="img4"></div>
+    <div class="gallery-item"><img src="photo_2025-04-23_10-17-46.jpg" alt="img5"></div>
+    <div class="gallery-item"><img src="photo_2025-04-23_10-17-48.jpg" alt="img6"></div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Zamonaviy Gallery. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

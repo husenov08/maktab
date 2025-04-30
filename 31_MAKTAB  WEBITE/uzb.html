@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box Shadow Misoli</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.box {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  width: 540px;
+  text-align: center;
+  
+  /* box-shadow qo'shilmoqda */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  
+  transition: box-shadow 0.3s ease;
+}
+
+.box:hover {
+  /* Hover qilinganda soya kuchayadi */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+</style>
+<body>
+  <div class="box">
+    <h2>|UZB HAQIDA|</h2>
+    <p> — Oʻzbekiston hududidagi eng koʻp va beqiyos
+         qoya tosh rasmlarini saqlab qolgan vodiydir. Bu yerda 6-7 ming yil
+          avval qoyatoshlarga bitilgan 10 mingdan ortiq petrogliflar topilgan.
+           Tasvirlar oʻzida ibtidoiy jamoa tuzumi davridagi davr voqea-hodisalarini
+            qamrab olgan. Bular odamlarning ish jarayoni, turli marosimlar, ov manzaralari,
+             qurol-aslahalar, oʻsha davrlarda foydalanilgan kiyim-kechak va taqinchoqlar, kiyik,
+              qulon, jayron, sher, arslon, qoplon va itlarning xatti-harakatlari orqali mohirona aks
+               ettirilgan.</p>
+  </div>
+</body>
+</html>

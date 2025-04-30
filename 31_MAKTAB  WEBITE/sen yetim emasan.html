@@ -1,0 +1,45 @@
+a<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box Shadow Misoli</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.box {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  width: 450px;
+  text-align: center;
+  
+  /* box-shadow qo'shilmoqda */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  
+  transition: box-shadow 0.3s ease;
+}
+
+.box:hover {
+  /* Hover qilinganda soya kuchayadi */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+</style>
+<body>
+  <div class="box">
+    <h2>|SEN YETIM EMASAN|</h2>
+    <p>Sen yetim emassan, 1962-yilda suratga olingan kinoqissa. Oʻzbek kinosining durdonalaridan biri hisoblanadi. Rahmat Fayziyning shu
+         nomli qissasi asosida suratga olingan. 1970-yilda yozuvchi ushbu kinoqissa ustidagi ijodiy ishini davom ettirib, urush yillarida 14
+         yetim bolani oʻz bagʻriga olgan va ularga mehr-muruvvat koʻrsatgan kishilar jasoratiga bagʻishlangan „Hazrati inson“ romanini yaratgan.</p>
+  </div>
+</body>
+</html>

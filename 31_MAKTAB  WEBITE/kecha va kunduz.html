@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box Shadow Misoli</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.box {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  width: 540px;
+  text-align: center;
+  
+  /* box-shadow qo'shilmoqda */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  
+  transition: box-shadow 0.3s ease;
+}
+
+.box:hover {
+  /* Hover qilinganda soya kuchayadi */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+</style>
+<body>
+  <div class="box">
+    <h2>|KECHA VA KUNDUZ|</h2>
+    <p>Kecha Va Kunduz — Oʻzbek yozuvchisi Abdulhamid Choʻlpon tomonidan yozilgan roman. Bu asarga
+         „Oʻtkan kunlar asari darajasida“ deb baho berilgan. U o‘zbek adabiyotidagi ilk roman — dilogiya bo‘lib,
+          ikki kitobdan iborat. Birinchi qismi „Kecha“ 1933-1934-yillarda Moskvada yozilgan. Dastlabki boblari 1935-yilda 
+          Toshkentdagi adabiy jurnalning 1-sonida bosilgan, asar 1936-yilda to‘liq holda nashr etilgan. Asardagi 
+        voqealar ilk bahorda boshlanib, qish chillasida tugaydi. Cho‘lpon romaniga „Hamal keldi — amal keldi“ maqolini epigraf qilib olgan</p>
+  </div>
+</body>
+</html>
